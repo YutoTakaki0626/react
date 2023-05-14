@@ -7,7 +7,7 @@ import Hello from "./components/Hello"
 const Example = () => {
   return (
     <>
-      <Hello />
+      <Hello name='Bob'/>
       <Bye />
     </>
   );

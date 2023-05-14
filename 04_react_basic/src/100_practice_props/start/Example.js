@@ -1,11 +1,10 @@
 import Profile from "./components/Profile";
 
-const profile = [
-  { name: "Takashi", age: 19, country: "Japan" },
-  { name: "Jane", age: 28, country: "UK" },
-];
-
 const Example = () => {
+  const profile = [
+    {name:'Takashi', age:19, country:'Japan'},
+    {name:'Jane', age:28, country:'UK'}
+  ]
   return (
     <div>
       <h3>練習問題</h3>
