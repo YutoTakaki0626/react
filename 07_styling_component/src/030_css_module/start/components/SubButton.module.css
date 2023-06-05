@@ -10,6 +10,16 @@
     background: orange;
 }
 
+.btn:hover{
+    background-color: red;
+}
+
 .selected {
     background-color: pink;
+}
+
+@media (max-width: 600px){
+    .btn{
+        border-radius: 0;
+    }
 }
