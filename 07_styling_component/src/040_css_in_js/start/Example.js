@@ -10,7 +10,23 @@ const StyledButton = styled.button`
   height: 60px;
   font-weight: bold;
   cursor: pointer;
-  background: ${(props) => props.isSelected ? 'pink' : ''};
+  background: ${(isSelected) => isSelected ? 'pink' : ''};
+
+  @media (max-width: 600px){
+    border-radius: 0;
+  }
+`;
+
+const OrangeButton = styled(StyledButton)`
+  background-color: orange;
+  :active{
+    color: red;
+    opacity: 0.7;
+  }
+
+  span{
+    font-size: 2em;
+  }
 `;
 
 const Example = () => {
@@ -21,6 +37,7 @@ const Example = () => {
   return (
     <>
       <StyledButton isSelected={isSelected} onClick={clickHandler}>スタイルボタン</StyledButton>
+      <OrangeButton isSelected={isSelected} onClick={clickHandler}><span>スタイルボタン</span></OrangeButton>
       <button className={`btn ${isSelected ? "selected" : ""}`} onClick={clickHandler}>
         ボタン
       </button>
