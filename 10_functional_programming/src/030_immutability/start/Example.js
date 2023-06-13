@@ -1,3 +1,12 @@
+const num = { val: 2 }
+const double = (num) => {
+  num.val = num.val * 2;
+  return num;
+}
+
+const newNum = double(num);
+console.log('newNum', newNum, 'num', num)
+
 const Example = () => {
   return (
     <>
